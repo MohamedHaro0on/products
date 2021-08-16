@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="Index_style.css" type="text/css">
+    <title> products </title>
+</head>
+
+<body>
+
+    <h1 class="text-secondary text-center "> adding Products and saving them in local storage </h1>
+    <main class="py-5">
+        <section class="container">
+            <input type="text" placeholder="Search..." class="form-control" id="search" name="search"
+                onkeyup="productSearch(this.value)" value="">
+            <section>
+                <div class="row container pt-1" id="result"></div>
+            </section>
+
+
+            <div class="from-group mt-5 ">
+                <label for="productName"> The Product's Name :</label>
+                <input type="text" name="productName" class="form-control" id="productName" placeholder="Name*">
+            </div>
+            <div class="form-group">
+                <label for="productDesc"> The Product's Desc : </label>
+                <input type="text" placeholder="Desc*" name="productDesc" id="productDesc" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="productPrice"> The Product's Price : </label>
+                <input type="number" placeholder="price*" name="productPrice" id="productPrice" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="productCom"> The Product's Company : </label>
+                <input type="text" placeholder="company*" name="productCom" id="productCom" class="form-control">
+            </div>
+            <button class=" btn btn-primary px-4 py-3  ml-auto d-block" id="myBtn" type = "submit"> add product </button>
+        </section>
+    </main>
+    <section class="container">
+        <div class="row justify-content-around" id="productsRow"></div>
+    </section>
+
+    <script src="Index_js.js"></script>
+</body>
+
+</html>
